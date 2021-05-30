@@ -10,10 +10,6 @@
     margin: 0;
     padding: 0;
   }
-img{
-  margin-top:30px
-}
-
 
   .section-title {
     display: block;
@@ -21,43 +17,9 @@ img{
     margin-bottom: 60px;
 }
 
-.section-title p {
-    color: #999;
-    font-weight: 200;
-    font-size: 18px;
-    line-height: 33px;
-    margin: 0;
-}
-.section-title h4 {
-    color: #999;
-      font-size: 30px;
-    font-weight: 450;
-    line-height: 62px;
-    margin: 0 0 25px;
-    padding: 0;
-    text-transform: none;
-}
-
-.section-title h3 {
-    font-size: 38px;
-    font-weight: 500;
-    line-height: 62px;
-    margin: 0 0 25px;
-    padding: 0;
-    text-transform: none;
-}
 
 
 
-#Products img{
-height:100%;
-width:100%
-}
-
-#productDescription{
-  margin-top:140px !important;
-
-}
 
 label{
    margin-top:40px
@@ -85,5 +47,18 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #45a049;
+}
+
+ol {
+  background:teal;
+  padding: 20px;
+}
+
+
+
+ol li {
+ color:white;
+  padding: 5px;
+  margin-left: 35px;
 }
 
