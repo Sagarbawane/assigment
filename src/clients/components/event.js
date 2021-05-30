@@ -32,12 +32,38 @@ class Events extends React.Component {
                     <div className=' section-title'>
                         <h2 >All Events</h2>
                     </div>
-                    <ol>
-                        {this.state.data.map((ele, i) => {
-                            console.log(ele)
-                            return <li>{ele.title}</li>
-                        })}
-                    </ol>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th> Event</th>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Score</th>
+
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {this.state.data.map((ele, i) => {
+                                console.log(ele.stats.datetime_utc)
+                                return (
+                                    <tr  >
+                                        <td> {ele.id} </td>
+                                        <td> {ele.title} </td>
+                                        <td> {ele.datetime_local} </td>
+                                        <td> {ele.type} </td>
+                                        <td> {ele.score} </td>
+
+
+
+
+                                    </tr>
+                                )
+                            })}
+                        </tbody>
+                    </table>
                 </div>
             </div>
 
